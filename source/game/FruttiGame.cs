@@ -14,7 +14,7 @@ public partial class FruttiGame : FruttiGameBase
     {
         Add(screens = new ScreenStack());
 
-        screens.Push(new LoginMenuScreen());
+        screens.Push(new AuthMenuScreen());
     }
 
     protected override IReadOnlyDependencyContainer CreateChildDependencies(IReadOnlyDependencyContainer parent)

@@ -71,7 +71,7 @@ public class PacketHandler : IPacketHandler
                     return JsonSerializer.Serialize(new { Success = false, Message = $"Unknown packet type: {packetEnvelope.Type}" });
             }
         }
-        catch (JsonException jsonEx) // Use JsonException para System.Text.Json
+        catch (JsonException jsonEx)
         {
             logger.LogError(jsonEx, "JSON deserialization error: {Message} - Raw packet: {RawPacket}", jsonEx.Message, rawPacket);
             return JsonSerializer.Serialize(new { Success = false, Message = "Invalid JSON data." });

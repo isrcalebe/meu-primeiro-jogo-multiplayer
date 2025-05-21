@@ -28,7 +28,7 @@ public class AuthenticationService : IAuthenticationService
 
         var passwordHash = passwordHasher.HashPassword(registerUserDto.Password);
 
-        var newUser = new User(registerUserDto.Username, registerUserDto.Password);
+        var newUser = new User(registerUserDto.Username, passwordHash);
         await userRepository.AddUserAsync(newUser).ConfigureAwait(false);
 
         return newUser;

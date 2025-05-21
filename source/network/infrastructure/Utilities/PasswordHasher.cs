@@ -6,7 +6,7 @@ public class PasswordHasher : IPasswordHasher
 {
     public string HashPassword(string password)
     {
-        return BCrypt.Net.BCrypt.HashPassword(password, workFactor: 12);
+        return BCrypt.Net.BCrypt.HashPassword(password);
     }
 
     public bool VerifyHashedPassword(string password, string hashedPassword)
