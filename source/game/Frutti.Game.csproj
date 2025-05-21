@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup Label="Package References">
+    <PackageReference Include="ppy.osu.Framework" Version="2025.512.0" />
+  </ItemGroup>
+  <ItemGroup Label="Project References">
+    <ProjectReference Include="..\resources\Frutti.Game.Resources.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Mediator.Abstractions" Version="2.1.7" />
+    <PackageReference Include="Mediator.SourceGenerator" Version="2.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\domain\Frutti.Server.Domain.csproj" />
+  </ItemGroup>
+</Project>

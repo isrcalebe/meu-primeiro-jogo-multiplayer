@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ApplicationIcon>Frutti.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup Label="Project References">
+    <ProjectReference Include="..\..\game\Frutti.Game.csproj" />
+  </ItemGroup>
+  <ItemGroup Label="Resources">
+    <EmbeddedResource Include="Frutti.ico" />
+  </ItemGroup>
+  <ItemGroup Label="Windows Icons">
+    <Content Include="*.ico" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
