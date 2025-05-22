@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\application\Frutti.Server.Application.csproj" />
+  </ItemGroup>
+</Project>
