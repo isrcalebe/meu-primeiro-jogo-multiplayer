@@ -41,5 +41,8 @@ public class InMemoryUserRepository : IUserRepository
 
     public Task<bool> DeleteUserAsync(Guid id)
     {
+        var result = users.TryRemove(id, out _);
+
+        return Task.FromResult(result);
     }
 }
